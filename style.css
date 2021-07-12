@@ -1,0 +1,159 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common style */
+body{font-family: 'Poppins', sans-serif;
+    background-color:whitesmoke;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.container{
+    background-color: white;
+    width: 876px;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 21px;
+     
+
+}
+hr{
+    border: 1px solid  gray;
+    margin-bottom:30px;
+}
+/* top players style */
+/* .top-players{
+    display: flex;
+    justify-content: center; */
+    .top-players{
+        margin-bottom:30px;
+    }
+    .section-title{
+        color: blue;
+        margin-top: 30px;
+    }
+
+.players{
+    display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-row-gap:30px;
+    
+    /* grid-template-columns: repeat(3,1fr);
+     */
+}
+.player{
+    display: flex;
+    align-items: center;
+    /* padding: 35px;
+    justify-content:center; */
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    margin-left: 16px;
+
+}
+
+/*-------- top box style ----------*/
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
+}
+.blog{
+    display: flex;
+}
+.blog img{
+    width: 177px;
+    height: 110px;
+}
+.blog-info{
+    margin-left:16px;
+}
+.blog-title{
+    font-size: 20px;
+
+}
+.auther{
+    color:coral;
+    font-size: 16px;
+}
+.auther a{
+    text-decoration: none;
+}
+
+/*-------------------
+     courses style
+ ----------- --------*/
+ .courses{
+     display:grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-column-gap:50px;
+     /* justify-content: center;
+     align-items: center; */
+     
+ }
+ /* .course{
+     justify-content: center;
+     align-items: center;
+ } */
+.course .courser-benar img{
+    width:224px;
+  
+    height:104px;
+    padding: 15PX;
+}
+.course-info{
+    display: flex;
+     align-items:center;
+     justify-content: space-between;
+     
+}
+.star{
+    color:gold;
+}
+.star-1{
+    color: grey;
+     
+}
+.rating {
+    padding:10px;
+}
+
+.time .fa-clock{
+    width: 5px;
+    background-color: goldenrod;  
+    font-size: 14px;
+    padding-right: 50px;
+}
+
+/*------------ 
+     Media queries
+-------------- */
+ 
+/*-------------
+  Mobile Device 
+  --------------*/
+  @media only screen and (max-width:688px) {
+      .container{
+          width: 100%;
+      }
+      .players {
+          background-color: hotpink;
+          grid-template-columns: repeat(1,1fr);
+        }
+        .player{
+            flex-direction: column;
+        }
+        .courses.blogs{
+            display: none;
+        }
+      }
+      
+  }
